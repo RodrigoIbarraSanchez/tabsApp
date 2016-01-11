@@ -1,0 +1,59 @@
+<!--<div class="list">
+    <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="email" ng-model="email">
+    </label>
+    <label class="item item-input">
+        <span class="input-label">Contraseña</span>
+        <input type="password" ng-model="password" ng-minlength="3">
+    </label>
+    <div class="padding">
+        <button ui-sfer="main" ng-disabled="!email || !password" class="button button-block button-positive">Identificarse</button>
+    </div>
+</div>-->
+
+
+<div class=" textoInicio backgroundLogin has-header" style="position:relative">
+
+    <div class="list">
+        <label class="item item-input item-select">
+            <div class="input-label">
+                País:
+            </div>
+            <select ng-model="countryCode">
+                <option selected value="52">México</option>
+                <option value="1">Estados Unidos</option>
+            </select>
+        </label>
+    </div>
+    <div style="margin-left:3px" class="row">
+        <div class="col padding">
+            <label class="item item-input item-stacked-label">
+                <input class="codigoPais itemNumeroTelefono" type="text" ng-model="countryCode" value="+" placeholder="+">
+            </label>
+        </div>
+        <div class="col col-80 padding">
+            <label class="item item-input item-stacked-label">
+                <input class="number itemNumeroTelefono" type="text" ng-model="number" placeholder="Number" ng-minlength="10">
+            </label>
+        </div>
+    </div>
+    <div style="margin-left:22px" class="row padding">
+        <p style="color:grey">Confirma tu código de país y escribe tu número de teléfono</p>
+    </div>
+    <div style="margin-left:6px" class="row padding textoInicio">
+        <input type="checkbox" name="your-group" value="unit-in-group" /><span style="color:grey">Permitir notificaciones que pueden incluir sonidos, alertas y globos en la pantalla de inicio</span>
+    </div>
+    <div class="row responsive-sm">
+        <div class="col">
+            <button class="button button-block botonEnviar" type="submit" ui-sref="smsCode" ng-disabled="!number" ng-click="register()">Enviar</button>
+        </div>
+    </div>
+</div>
+
+<div ng-show="formInfo">
+    <input type="text" ng-model="name" placeholder="Name">
+    <input type="text" ng-model="lastname" placeholder="Lastname">
+    <input type="text" ng-model="status" placeholder="Status">
+    <input type="submit" ng-click="updateInfo()">
+</div>

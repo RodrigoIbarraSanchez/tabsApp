@@ -1,0 +1,18 @@
+<div class="has-header">
+    <div class="padding">
+        <div style="margin-left:16px" class="padding">
+            <p style="color:grey">Te hemos enviado un SMS con un código de seguridad</p>
+        </div>
+        <div style="margin-left:16px" class="padding">
+            <p style="color:grey">Para completar la validación de su cuenta, introduzca el código de activación de 5 digitos</p>
+        </div>
+        <label style="margin-left:35px;" class="col col-80 item item-input item-stacked-label">
+            <input style="background:transparent;color: #D43F4D!important;margin-left:34px!important;font-size:larger;" type="text" ng-model="verificationCode" placeholder="Code" ng-minlength="5" required>
+        </label>
+        <div class="row responsive-sm">
+            <div class="col">
+                <button ng-click="login()" class="button botonEnviar" type="submit" ng-disabled="!verificationCode" ng-minlenght>Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>

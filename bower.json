@@ -3,5 +3,8 @@
   "private": "true",
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#1.2.4"
+  },
+  "dependencies": {
+    "slang-adventure": "https://github.com/SergioEnrique/slangAdventure.git#~0.0.1-alpha"
   }
 }
