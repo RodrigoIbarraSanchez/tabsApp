@@ -1,1 +1,449 @@
-/* Empty. Add your own CSS if you like */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #D43F4D;
+	background-color: black;
+}
+
+.pane, .view {
+	background: black;
+}
+
+.textoInicio {
+	width: 340px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.backgroundLogin {
+	background: url(../img/1.png) no-repeat;
+	background-position: center;
+}
+
+.overflow-scroll {
+	background-color: #000;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	color: #D43F4D;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	color: #D43F4D;
+}
+
+*::-webkit-input-placeholder {
+	color: #D43F4D !important;
+}
+
+*:-moz-placeholder {
+	color: #D43F4D !important;
+}
+
+*:-ms-input-placeholder {
+	/* IE10+ */
+	color: #D43F4D !important;
+}
+
+.bar.bar-stable {
+	background: #D43F4D;
+}
+
+.bar.bar-stable .title {
+	color: #fff;
+	font-size: 24px;
+}
+
+.item-input {
+	background: transparent;
+}
+
+.input-label {
+	color: #D43F4D;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.bar-header.has-tabs-top {
+	background: #D43F4D;
+	color: white;
+}
+
+.botonAbrirPerfil {
+	color: white!important;
+}
+
+.tabs-stable > .tabs,
+.tabs.tabs-stable {
+	background: #D43F4D;
+	color: #80242D!important;
+}
+
+.tabs .tab-item .badge.badge-assertive,
+.badge.badge-assertive {
+	background-color: #FFFFFF;
+	color: #80242D!important;
+}
+
+.item-icon-right {
+	color: #D43F4D!important;
+}
+
+.botonDelete {
+	background: #1F1F1F!important;
+	color: #D43F4D!important;
+}
+
+
+.item {
+	color: none;
+	background: transparent;
+	border: none;
+	border-bottom: solid #D43F4D;
+}
+
+.menu-left {
+	background: black;
+}
+
+.item,
+.item h1,
+.item h2,
+.item h3,
+.item h4,
+.item h5,
+.item h6,
+.item p,
+.item-content,
+.item-content h1,
+.item-content h2,
+.item-content h3,
+.item-content h4,
+.item-content h5,
+.item-content h6,
+.item-content p {
+	overflow: visible;
+}
+
+.itemNumeroTelefono {
+	background: rgba(0, 0, 0, 0)!important;
+}
+
+.itemNumeroTelefono2 {
+	background: black!important;
+	border-bottom: solid white!importan;
+}
+
+.botonEnviar {
+	font-size: 23px;
+	padding: inherit;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 20px;
+	background: #D43F4D!important;
+	color: white;
+}
+
+.bar-footer {
+	background: transparent;
+}
+
+.item-complex .item-content, .item-radio .item-content {
+	background: transparent!important;
+}
+
+.bar-headerChatArea {
+	background: transparent!important;
+}
+
+.item-select select {
+	background: transparent;
+	color: white;
+	font-size: 20px;
+}
+
+.styleSelect {
+	width: 140px;
+	height: 34px;
+	overflow: hidden;
+	background: url("images/downArrow.png") no-repeat right #fff;
+	border: 2px solid #000;
+}
+
+.codigoPais {
+	background: transparent;
+	color: #D43F4D!important;
+	font-size: 18px!important;
+}
+
+.number {
+	background: transparent;
+	color: #D43F4D!important;
+	font-size: 18px!important;
+	border-color: #D43F4D;
+}
+
+.tabs-striped .tabs {
+	background: #D43F4D;
+	color: #9F2F3A;
+	border: #D43F4D;
+}
+
+.tabs-top.tabs-striped .tab-item.tab-item-active,
+.tabs-top.tabs-striped .tab-item.active,
+.tabs-top.tabs-striped .tab-item.activated {
+	color: #D43F4D;
+	cursor: default;
+	background-color: #9F2F3A;
+	border: 1px solid #9F2F3A;
+}
+
+a.item {
+	border-bottom: 1px solid grey!important;
+}
+
+.tabs-striped.tabs-color-assertive .tab-item {
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+	color: #9F2F3A;
+	background-color: #D43F4D;
+}
+
+
+/*Side menu left*/
+
+#profile-bg {
+	position: fixed;
+	background: lime;
+	left: 0;
+	top: 44px;
+	width: 100%;
+	height: 150px;
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/94311/bg.jpg') no-repeat;
+	background-size: 100%;
+	background-position: 50% 20%;
+	text-align: center;
+}
+
+#content {
+	position: relative;
+	margin-top: 150px;
+	background-color: white;
+	box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.4);
+	padding-top: 200px;
+}
+
+#profile-info {
+	position: absolute;
+	width: 100%;
+	height: 94px;
+	z-index: 2;
+	text-align: center;
+	background: #D43F4D;
+}
+
+#profile-name {
+	color: #444;
+	font-size: 26px;
+}
+
+#profile-description {
+	font-size: 15px;
+	color: #888;
+}
+
+#profile-description a {
+	color: #888;
+}
+
+#profile-image {
+	display: block;
+	border-radius: 100px;
+	width: 128px;
+	height: 128px;
+	margin: 30px auto 0;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+.list-item-content {
+	padding: 5px;
+}
+
+.list-item {
+	color: #666666;
+}
+
+.post {
+	color: #444;
+}
+
+.post-time {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-size: 11px;
+	color: #888;
+}
+
+.post-profile-image {
+	display: inline-block;
+	vertical-align: top;
+	width: 48px;
+	height: 48px;
+	margin-right: 10px;
+}
+
+.post-options {
+	position: absolute;
+	font-size: 16px;
+	right: 5px;
+	bottom: 5px;
+	color: #888;
+}
+
+
+/*Chat Area */
+
+.myOwnsMessage {
+	color: black;
+}
+
+.myOwnsMessage {
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.myOwnsMessage .msg {
+	order: 1;
+	border-bottom-right-radius: 0px;
+	box-shadow: 1px 2px 0px #D4D4D4;
+}
+
+.myOwnsMessage .avatar {
+	order: 2;
+}
+
+.myOwnsMessage .avatar:after {
+	content: "";
+	position: relative;
+	display: inline-block;
+	bottom: 19px;
+	right: 0px;
+	width: 0px;
+	height: 0px;
+	border: 5px solid #fff;
+	border-right-color: transparent;
+	border-top-color: transparent;
+	box-shadow: 0px 2px 0px #D4D4D4;
+}
+
+.someBodysMessage {
+	color: black;
+}
+
+.someBodysMessage .msg {
+	order: 1;
+	border-top-left-radius: 0px;
+	box-shadow: -1px 2px 0px #77232C;
+	background: #EF969E;
+}
+
+.someBodysMessage:before {
+	content: "";
+	position: relative;
+	top: 0px;
+	right: 0px;
+	left: 40px;
+	width: 0px;
+	height: 0px;
+}
+
+.backChatArea {
+	background-image: url('../img/fondos/f2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: auto;
+	height: auto;
+}
+
+.chat {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 50px 0;
+	margin-top: 60px;
+	margin-bottom: 10px;
+}
+
+.chat li {
+	padding: 0.5rem;
+	overflow: hidden;
+	display: flex;
+}
+
+.msg {
+	background: white;
+	width: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+	max-width: 75%;
+	min-width: 50px;
+	padding: 10px;
+	border-radius: 2px;
+	box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
+}
+
+.msg p {
+	font-size: 1.8rem;
+	margin: 0 0 0.2rem 0;
+	color: black;
+}
+
+.msg img {
+	position: relative;
+	display: block;
+	width: 450px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 3px #eee;
+	transition: all .4s cubic-bezier(0.565, -0.260, 0.255, 1.410);
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.msg .timE {
+	font-size: 1.7rem;
+	color: #942631;
+	margin-top: 3px;
+	float: right;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.msg .timE:before {
+	color: black;
+	font-family: FontAwesome;
+	display: inline-block;
+	margin-right: 4px;
+}
