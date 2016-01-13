@@ -1,4 +1,4 @@
-angular.module('SlangVoom.controllers',  ['slangAdventure.loginService'])
+angular.module('SlangVoom.controllers',  ['slangAdventure.loginService', 'slangAdventure.chatService'])
 
 .controller('loginCtrl', ['$scope', '$rootScope', '$state', 'loginService',
   function ($scope, $rootScope, $state, loginService) {
@@ -157,6 +157,6 @@ function(                 $scope,   chatService,   newMessageFactory,   currentC
 
 }])
 
-.controller('chatListCtrl', ['$rootScope', '$scope', 'chatService', 'chatListFactory', function ($rootScope,   $scope,   chatService,   chatListFactory) {
+.controller('chatListCtrl', ['$rootScope', '$scope', 'chatService', function ($rootScope,   $scope,   chatService) {
   
 }])

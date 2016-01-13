@@ -15,16 +15,29 @@
 
   <!-- ionic/angularjs js -->
   <script src="lib/ionic/js/ionic.bundle.js"></script>
-  <script src="lib/slang-adventure/login/login_service.js"></script>
-  <script src="lib/slang-adventure/user/user_factory.js"></script>
-  <script src="lib/slang-adventure/chat/chat_service.js"></script>
-  <script src="lib/slang-adventure/chat/current_chat_factory.js"></script>
-  <script src="lib/slang-adventure/chat/new_message_factory.js"></script>
-  <script src="lib/slang-adventure/chat/received_messages_about_to_seen.js"></script>
-  <script src="lib/slang-adventure/chat/chat_service.js"></script>
-  <script src="lib/ngstorage/ngStorage.js"></script>
-  <script src="lib/slang-adventure/filters.js"></script>
+  
+  <!-- Filtros y factorías comunes -->
   <script src="lib/slang-adventure/factories.js"></script>
+  <script src="lib/slang-adventure/filters.js"></script>
+
+  <!-- Factorías -->
+  <script src="lib/slang-adventure/user/user_factory.js"></script>
+  <script src="lib/slang-adventure/contacts/contacts_factory.js"></script>
+  <script src="lib/slang-adventure/chat/new_message_factory.js"></script>
+  <script src="lib/slang-adventure/chat/current_chat_factory.js"></script>
+  <script src="lib/slang-adventure/chat/sending_messages.js"></script>
+  <script src="lib/slang-adventure/chat/received_messages_about_to_seen.js"></script>
+
+  <!-- Servicios -->
+  <script src="lib/slang-adventure/login/login_service.js"></script>
+  <script src="lib/slang-adventure/user/user_service.js"></script>
+  <script src="lib/slang-adventure/contacts/contacts_service.js"></script>
+  <script src="lib/slang-adventure/chat/chat_service.js"></script>
+  <script src="lib/slang-adventure/upload/upload_service.js"></script>
+
+  <script src="lib/ngstorage/ngStorage.js"></script>
+  <script src="lib/firebase/firebase.js"></script>
+  <script src="lib/angularfire/dist/angularfire.js"></script>
 
   <!-- cordova script (this will be a 404 during development) -->
   <script src="cordova.js"></script>
