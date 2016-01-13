@@ -6,13 +6,18 @@ navigation history that also transitions its views in and out.
 <ion-tabs class="tabs-striped tabs-top tabs-icon">
 
   <!-- Chats Tab -->
-  <ion-tab title="Chats" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/chats">
+  <ion-tab title="Chats" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" badge="2" badge-style="badge-assertive" href="#/tab/chats">
     <ion-nav-view name="tab-chats"></ion-nav-view>
   </ion-tab>
 
-  <!-- Dashboard Tab -->
-  <ion-tab title="Status" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/dash">
-    <ion-nav-view name="tab-dash"></ion-nav-view>
+  <!-- Groups Tab -->
+  <ion-tab title="Groups" icon-off="ion-ios-people" icon-on="ion-ios-people" href="#/tab/groups">
+    <ion-nav-view name="tab-groups"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Contacts Tab -->
+  <ion-tab title="Contacts" icon-off="ion-person-stalker" icon-on="ion-person-stalker" href="#/tab/contacts">
+    <ion-nav-view name="tab-contacts"></ion-nav-view>
   </ion-tab>
 
   <!-- Account Tab -->

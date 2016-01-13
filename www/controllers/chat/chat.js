@@ -1,51 +1,6 @@
-angular.module('SlangVoom.controllers',  ['slangAdventure.loginService'])
+'use strict';
 
-.controller('loginCtrl', ['$scope', '$rootScope', '$state', 'loginService',
-  function ($scope, $rootScope, $state, loginService) {
-
-    //Para registrar a un usuario:
-    // Registrar o cambiar contraseña si ya estaba registrado
-    $scope.register = function () {
-      var number = $scope.countryCode + $scope.number;
-      loginService.register(number, function (response) {
-        alert(response.data);
-        $rootScope.formRegister = false;
-        $rootScope.formLogin = true;
-      });
-    };
-
-    // Registrar o cambiar contraseña si ya estaba registrado
-    $scope.register = function () {
-      var number = $scope.countryCode + $scope.number;
-      loginService.register(number, function (response) {
-        alert(response.data);
-      });
-    };
-
-    $scope.login = function () {
-      loginService.login($scope.verificationCode, function (name) {
-        if (userFactory.getName() == null || userFactory.getName() == "") {
-          // Mandar al formulario de Nombre, Apellidos y Estado
-        } else {
-          // $state.go('main');
-        }
-      });
-    };
-
-}])
-
-.controller('smsCodeCtrl', ['$scope', '$state', '$rootScope', 'userFactory', 'loginService', function ($scope, $state, $rootScope, userFactory, loginService) {
-  $scope.login = function () {
-    loginService.login($scope.verificationCode, function (name) {
-      $rootScope.formLogin = false;
-      if (userFactory.getName() == null || userFactory.getName() == "") {
-        $rootScope.formInfo = true;
-      } else {
-        $state.go('tab.chats');
-      }
-    });
-  };
-}])
+angular.module('slangApp.chat', ['slangAdventure.contactsService', 'slangAdventure.newMessageFactory', 'slangAdventure.currentChatFactory'])
 
 .controller('chatCtrl', ['$scope', 'chatService', 'newMessageFactory', 'currentChatFactory', '$window',
 function(                 $scope,   chatService,   newMessageFactory,   currentChatFactory,   $window) {
@@ -155,8 +110,4 @@ function(                 $scope,   chatService,   newMessageFactory,   currentC
         return n % 1 === 0;
     }
 
-}])
-
-.controller('chatListCtrl', ['$rootScope', '$scope', 'chatService', 'chatListFactory', function ($rootScope,   $scope,   chatService,   chatListFactory) {
-  
-}])
+}]);
